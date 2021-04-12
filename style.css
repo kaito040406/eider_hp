@@ -1775,7 +1775,7 @@ footer {
         color: #a48c61;
         background-color: #F8F8F8;
         padding: 3% 35%;
-        width: 100%;
+        width: 30%;
         font-size: 35px;
     }
     .se1-me {
@@ -1890,8 +1890,13 @@ footer {
         width: 90%;
     }
     .flex2 {
-        display: flex;
+        display: block;
         justify-content: space-between;
+        margin: 20% 0;
+    }
+    section {
+        display: block;
+        width: 100%;
         margin: 20% 0;
     }
 }
