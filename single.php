@@ -5,7 +5,7 @@
         <div class="newsx">
             <div class="news-title main-course-item">
                 <h3>NEWS</h3>
-                <p>ニュース</p>
+                <p>ニュ</p>
             </div>
             <div class="news-mex">
                 <div class="news-me main-course-item">

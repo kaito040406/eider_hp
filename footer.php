@@ -36,6 +36,11 @@
     <div class="footer">
         <p>Copyright © 2020 EIDER CORPORATION All Rights Reserved.</p>
     </div>
+    <div class="google_sec" style="color:white; font-size: 0.8rem; text-align: center;">
+        This site is protected by reCAPTCHA and the Google
+        <a href="https://policies.google.com/privacy" style="color:white;">Privacy Policy</a> and
+        <a href="https://policies.google.com/terms" style="color:white;">Terms of Service</a> apply.
+    </div>
 </footer>
 <script src="script.js"></script>
 <?php wp_footer(); ?>

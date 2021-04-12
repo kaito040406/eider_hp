@@ -59,10 +59,10 @@
     </div>
     <div class="container">
         <div class="greet">
-            <div class="greet-img main-course-item">
+            <!-- <div class="greet-img main-course-item">
                 <img src="https://images.unsplash.com/photo-1560241804-02b7b1bc9d55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNTgwfDB8MXxzZWFyY2h8N3x8TWFufGVufDB8fHx8MTYxNjE1NTkzMg&ixlib=rb-1.2.1&q=80&w=400" alt="">
-            </div>
-            <div class="greetx main-course-item">
+            </div> -->
+            <div class="greetx main-course-item" style="margin: 0 auto;">
                 <div class="greet-title">
                     <p>Greetimg</p>
                     <h3>ご挨拶</h3>
@@ -84,7 +84,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <!-- <div class="container">
         <div class="off">
             <div class="off-title main-course-item">
                 <p>Officer</p>
@@ -116,7 +116,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- <div class="container"> -->
     <div class="kai">
         <div class="kai-title main-course-item">
@@ -214,6 +214,7 @@
         <div class="past">
             <div class="past-item">
                 <div class="past-main main-course-item">
+                <?php query_posts( 'category_name=past_recode&posts_per_page=5000' ); ?>
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                             <section>
                                 <div class="flex2">
@@ -221,7 +222,7 @@
                                         <?php if (has_post_thumbnail()) : ?>
                                             <?php the_post_thumbnail('medium'); ?>
                                         <?php else : ?>
-                                            <img src="https://shibatakoumuten.co.jp/app/wp-content/uploads/2021/03/b482a3cadd45c6ec2275c882c0a92f75.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/no_image.jpg">
                                         <?php endif; ?>
                                     </div>
                                     <div class="past-mes">

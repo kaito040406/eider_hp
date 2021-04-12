@@ -7,26 +7,26 @@
                 <p>ニュース</p>
             </div>
             <?php
-            $args = array(
-                'post_type' => 'news',
-                'post_per_page' => 6, //件数
-                'paged' => $paged
-            );
-            $the_query = new WP_Query($args);
-            if ($the_query->have_posts()) :
+            // $args = array(
+            //     'post_type' => 'news',
+            //     'post_per_page' => 6, //件数
+            //     'paged' => $paged
+            // );
+            // $the_query = new WP_Query($args);
+            // if ($the_query->have_posts()) :
             ?>
+            <?php query_posts( 'category_name=news&posts_per_page=6' ); ?>
                 <div class="news-mex">
                     <div class="news-me main-course-item">
-                        <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                             <a href="<?php bloginfo('url'); ?>/news">
                                 <span class="date"><?php the_time('Y年m月d日'); ?></span>
                                 <div class="flex">
                                     <h3 class="h3"><?php the_title(); ?></h3>
                                 </div>
                             </a>
-                        <?php endwhile; ?>
-                    <?php else : ?>
-                    <?php endif; ?>
+                            <?php endwhile; ?>
+                        <?php endif; ?>
                     </div>
                 </div>
         </div>
@@ -51,7 +51,7 @@
                         人や地域にserviceを追求してまいります。
                         引き続き弊社をご愛顧賜りますようお願い申し上げます。</p>
                 </div>
-                <div class="about-bo">
+                <div class="se1-bo">
                     <a href="<?php bloginfo('url'); ?>/campany">more</a>
                 </div>
             </div>
@@ -74,13 +74,14 @@
             <div class="past-item">
                 <div class="past-main main-course-item">
                     <div class="flex2">
+                    <?php query_posts( 'category_name=past_recode&posts_per_page=5000' ); ?>
                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                                 <section>
                                     <div class="past-img">
                                         <?php if (has_post_thumbnail()) : ?>
                                             <?php the_post_thumbnail('medium'); ?>
                                         <?php else : ?>
-                                            <img src="https://shibatakoumuten.co.jp/app/wp-content/uploads/2021/03/b482a3cadd45c6ec2275c882c0a92f75.jpg" alt="">
+                                            <img src="<?php echo get_template_directory_uri(); ?>/img/no_image.jpg">
                                         <?php endif; ?>
                                     </div>
                                     <div class="past-mes">

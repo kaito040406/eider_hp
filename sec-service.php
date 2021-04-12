@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="se1 main-course-item">
+            <!-- <div class="se1 main-course-item">
                 <div class="se2-img">
                     <img src="https://paper.dropbox.com/ep/redirect/image?url=https%3A%2F%2Fpaper-attachments.dropbox.com%2Fs_7E2A5A2EAFBBEC0DCCA4907B7D6A969855E3B1D59D4BEB7AA7A66CB99D55C2CE_1616055304462_.png&hmac=PYXU6tEwjZj7AB3i9kzDTnieGUTlYJBOeOjbCiENpe4%3D" alt="">
                 </div>
@@ -63,6 +63,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
