@@ -977,7 +977,7 @@ opacity: 0.1;
     box-sizing: border-box;
     text-align: center;
     margin: 15% 0;
-    margin: 8% 5%;
+    margin: 8% 0;
 }
 
 .contact7 dd {
@@ -1032,6 +1032,10 @@ opacity: 0.1;
 .btn_contact7 input:hover {
     background-color: #FFF;
     color: #a48c61;
+}
+.wpcf7 .wpcf7-submit:disabled {
+    cursor: not-allowed;
+    width: 80%;
 }
 
 @media screen and (min-width: 768px) {
