@@ -8,7 +8,7 @@
             <div class="gaiyou ">
                 <img src="https://fly3.gigafile.nu/folder-pc-thumb.php?file=B%2F0326-29944128eaa52f758438eab2aa9e7e7f%2FK6ZtRhhH.png&size=300" alt="">
                 <p>〒661-0026 兵庫県尼崎市水堂町３－１－２１ 中塚ビル３０２号</p>
-                <p>TEL:06-6439-7639 受付時間：9:00～20:00（平日のみ)</p>
+                <p>TEL:06-6439-7639 受付時間：9:00～18:00（平日のみ)</p>
             </div>
             <div class="foom">
                 <div class="foom1 ">
@@ -23,7 +23,7 @@
                     <a href="tell:0000-00-0000">
                         <div class="foom2-me">
                             <h3>tell:06-6439-7639</h3>
-                            <p>受付時間：9:00～20:00（平日のみ)</p>
+                            <p>受付時間：9:00～18:00（平日のみ)</p>
                         </div>
                     </a>
                 </div>
